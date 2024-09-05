@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap');
+
+*{
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+.section{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+#main{
+    background-image: url(img/bgMAIN.png);
+}
+.main-block, .about-block, .skills-block, .works-block, .comments-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+.main-block{
+    flex-direction: column;
+    height: 100vh;
+}
+.main-content{
+    background-image:
+    url(img/form1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 849px;
+    height: 223px;
+    padding-left: 30px;
+}
+.main-title{
+    font-size: 80px;
+    color:#2B2D35;
+    padding-top: 67px;
+}
+.main-subtitle{
+    color: #2B2D35;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+}
+.button{
+    height: 60px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: #BBFF2C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    box-shadow: 5px 5px 0 #000000;
+    transition-duration: 0.3s;
+}
+.button:hover{
+    background: #a0d826;
+}
+
+    .button a {
+    font-size: 20px;
+    text-decoration: none;
+}
+#main{
+    background-image: url(img/bgMAIN.png);
+}
+#about{
+    background-image: url(img/bgABOUT.png);
+}
+#skills{
+    background-image: url(img/bgSKILLS.png);
+}
+#works{
+    background-image: url(img/bgWORKS.png);
+}
+#comments{
+    background-image: url(img/bgCOMMENTS.png);
+}
