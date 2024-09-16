@@ -204,3 +204,25 @@
     align-items: center;
     max-width: 200px;
 }
+footer{
+    background-color: #200153;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+ }
+ 
+ .footer-info p{
+    font-family: 'Comfortaa';
+    padding-bottom: 10px;
+ }
+ 
+ .footer-year p{
+    font-family: 'Comfortaa';
+    letter-spacing: 1.5px;
+ }
+ 
+ .footer-links a{
+    margin-right: 15px;
+ }
