@@ -238,6 +238,7 @@
     justify-content: space-between;
     align-items: center;
     flex: 1;
+    background-image: url(img/bgMAIN.png);
 }
 .nav-links{
     display: flex;
@@ -355,4 +356,43 @@
     max-width: 290px;
 }
 
+}
+.hide{
+    display: none;
+}
+.mobile-button{
+    display: none;
+    padding-top: 10px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+ }
+@media (max-width: 1000px) {
+    .mobile-button{
+        display: block;
+    }
+
+.mobile-menu{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    background-color: #200153;
+    min-height: 100vh;
+}
+.mobile-nav{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .mobile-nav-links .nav-link{
+    margin-bottom: 30px;
+    width: 210px;
+    height: 50px;
+}
+.off-scroll{
+    overflow: hidden;
+}
 }
