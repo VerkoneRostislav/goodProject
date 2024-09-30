@@ -166,22 +166,6 @@
     max-width: 500px;
     font-family: 'Comfortaa';
 }
-.moving-planet2{
-    background: url(img/moving-planet2.png);
-    background-repeat: no-repeat;
-    width: 208px;
-    height: 200px;
-    position: absolute;
-    bottom: 70px;
-    left: 0;
-}
-
-.moving-planet, .moving-planet2, .moving-cloud{
-    animation-name: planet_move;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
 .works-block img{
     margin: 0 20px;
     width: 27%;
@@ -373,13 +357,33 @@
     display: block;
 }
 
-.mobile-menu{
-position: absolute;
-top: 0;
-z-index: -1;
-width: 100%;
-background-color: #200153;
-min-height: 100vh;
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Пример затемнения фона */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+  }
+  
+  .mobile-menu.hide {
+    transform: translateY(-100%);
+  }
+  
+  .mobile-menu:not(.hide) {
+    transform: translateY(0);
+  }
+  
+  .mobile-nav-links .nav-link {
+    color: #000000;
+    font-size: 24px;
+    margin: 20px 0;
 }
 .mobile-nav{
 height: 100vh;
