@@ -189,6 +189,11 @@
     align-items: center;
     max-width: 200px;
 }
+.comment{
+    background-image: url(img/comment.png);
+    background-repeat: no-repeat;
+    padding: 55px;
+}
 .footer{
     background-color: #200153;
     height: 110px;
